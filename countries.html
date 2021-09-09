@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script src="semantic/dist/semantic.min.js"></script>
+<script src="countries.js"></script>
+<script src="loading.js"></script>
+
+    <style>
+        body{
+            background: rgb(190, 214, 235);
+        }
+        .bottombutton{
+            position: fixed;
+            bottom: 0;
+            text-align: right;
+        }
+        .sessionbar{
+            position: relative;
+            text-align: center;
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ui segment">
+        <img class="ui centered medium image" src="./use.jfif">
+    </div>
+
+    <p align="center">请告诉我们有多少国家(3-18)参赛吧！（不能出现重复国家噢）</p>
+
+    <div style="text-align: center;">
+    <div class="ui action input" id="input">
+        <input type="text" placeholder="国家数目" id="nums">
+        <button class="ui button" onclick="inputCountries()" id="confirm">确定</button>
+      </div>
+      </div>
+    <div id="place"></div>
+    <div class="bottombutton">
+        <button class="ui circular facebook icon button">
+            <i class="facebook icon"></i>
+          </button>
+          <button class="ui circular twitter icon button">
+            <i class="twitter icon"></i>
+          </button>
+          <button class="ui circular linkedin icon button">
+            <i class="linkedin icon"></i>
+          </button>
+          <button class="ui circular google plus icon button">
+            <i class="google plus icon"></i>
+          </button>
+          <button class="ui circular facebook icon button">
+            <i class="qq icon"></i>
+          </button>
+          <button class="ui circular facebook icon button">
+            <i class="wechat icon"></i>
+          </button>
+    </div>
+</body>
+</html>
